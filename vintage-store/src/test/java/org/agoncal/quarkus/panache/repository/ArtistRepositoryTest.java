@@ -1,4 +1,8 @@
+package org.agoncal.quarkus.panache.repository;
+
+import io.quarkus.test.TestTransaction;
 import io.quarkus.test.junit.QuarkusTest;
+import org.agoncal.quarkus.jdbc.Artist;
 import org.junit.jupiter.api.Test;
 
 import javax.inject.Inject;
@@ -14,9 +18,9 @@ public class ArtistRepositoryTest {
     ArtistRepository repository;
 
     @Test
+    @TestTransaction
     public void shouldCreateAndFindAnArtist() throws SQLException {
         Artist artist = new Artist("name", "bio");
-
         repository.persist(artist);
         assertNotNull(artist.getId());
 

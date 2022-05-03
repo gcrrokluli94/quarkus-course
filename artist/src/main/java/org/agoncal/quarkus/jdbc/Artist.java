@@ -1,3 +1,5 @@
+package org.agoncal.quarkus.jdbc;
+
 import java.time.Instant;
 
 public class Artist {
@@ -50,7 +52,7 @@ public class Artist {
 
     @Override
     public String toString() {
-        return "Artist{" +
+        return "org.agoncal.quarkus.jdbc.Artist{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", bio='" + bio + '\'' +

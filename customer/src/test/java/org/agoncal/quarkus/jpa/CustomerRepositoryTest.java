@@ -1,6 +1,7 @@
+package org.agoncal.quarkus.jpa;
+
 import io.quarkus.test.TestTransaction;
 import io.quarkus.test.junit.QuarkusTest;
-import org.agoncal.quarkus.jpa.Customer;
 import org.junit.jupiter.api.Test;
 
 import javax.inject.Inject;

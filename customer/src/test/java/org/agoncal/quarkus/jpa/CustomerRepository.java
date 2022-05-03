@@ -1,4 +1,4 @@
-import org.agoncal.quarkus.jpa.Customer;
+package org.agoncal.quarkus.jpa;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;

@@ -1,3 +1,5 @@
+package org.agoncal.quarkus.jdbc;
+
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.sql.DataSource;
