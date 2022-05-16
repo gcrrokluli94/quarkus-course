@@ -51,7 +51,7 @@ create sequence hibernate_sequence start 1 increment 1;
         primary key (id)
     );
 
-    create table t_purchase_order_line (
+    create table t_purchase_order_lines (
        id int8 not null,
         created_date timestamp not null,
         quantity int4 not null,
@@ -97,13 +97,13 @@ create sequence hibernate_sequence start 1 increment 1;
        foreign key (artist_fk) 
        references t_artists;
 
-    alter table if exists t_purchase_order_line 
-       add constraint FKk5o0lynwj3vddwn397a24kwqj 
+    alter table if exists t_purchase_order_lines 
+       add constraint FKf51l5n972qc282ubbv97c1kfa 
        foreign key (item_fk) 
        references t_items;
 
-    alter table if exists t_purchase_order_line 
-       add constraint FKffbfk27356l55yt28wd7w8mwp 
+    alter table if exists t_purchase_order_lines 
+       add constraint FKbjsagtstxdmdm55cxqvbxkaji 
        foreign key (purchase_order_fk) 
        references t_purchase_orders;
 
